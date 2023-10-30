@@ -25,7 +25,7 @@ CREATE TABLE rating (
 CREATE TABLE age_rating (
 	id INT NOT NULL AUTO_INCREMENT,
     movie_id INT NOT NULL,
-    age_rating DOUBLE NOT NULL,
+    age_rating VARCHAR(255) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (movie_id) REFERENCES movie(id)
 );
